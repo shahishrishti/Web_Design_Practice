@@ -4,12 +4,50 @@
 	<title>PhotoGrid</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css\styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	<style>
+		html{
+			height:100%;
+		}
+		body{
+			
+			background:url(https://images.unsplash.com/photo-1549379702-9692e37d2e58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1045&q=80);
+			background-size: cover;
+			background-position: center;
+			font-family: Lato;
+			color:white;
+		}
+		#content{
+			text-align: left;
+			padding-top: 25%;
+			text-shadow: 0px 4px 3px rgba(0,0,0,0.6), 0px 8px 13px rgba(0,0,0,0.4), 0px 18px 23px rgba(0,0,0,0.2);
+		}
+		.btn-secondary{
+			background: #ffffff;
+			color:#333;
+			text-decoration: none;
+		}
+		h1{
+			font-weight: 700;
+			font-size: 5em;
+		}
+		hr{
+			width:500px;
+			border-top: 1px solid #f8f8f8;
+			border-bottom: 1px solid rgba(0,0,0,0.3);
+		}
+		.navbar{
+		background-color: #2c3e50;
+	}
+.navbar-dark .navbar-nav .nav-link{
+		color:white;
+	} 
+	</style>
 </head>
-<body>
+<body id="landing">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		<div class="container">
-  			<a class="navbar-brand" href="#"><i class="fa fa-images" aria-hidden="true"></i>  IMGS</a>
+  			<a class="navbar-brand" href="#"><i class="fa fa-images" aria-hidden="true"></i> Feline Gallery</a>
   			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     			<span class="navbar-toggler-icon"></span>
   			</button>
@@ -24,47 +62,24 @@
     			</ul>
     			<ul class="navbar-nav ml-auto"> <!--ml-auto right side of navbar-->
     				<li class="nav-item">
-    					<a class="nav-link" href="#">Sign Up</a>
+    					<a class="nav-link" href="#">Sign Up <i class="fas fa-user-plus"></i></a>
     				</li>
     				<li class="nav-item">
-    					<a class="nav-link" href="#">Login</a>
+    					<a class="nav-link" href="#">Login <i class="fas fa-user"></i></a>
     				</li>
     			</ul>
   			</div>
 		</div>
 	</nav>
 	<div class="container">
-		<div class="jumbotron">
-		 	<h1><span class="fa fa-camera-retro fa-1x"></span>  The Image Gallery</h1>
-		 	<p>A bunch of beautiful cats!!</p>
-		</div>
 		<div class="row">
-			<div class="col-lg-4 col-sm-6">
-					<img src="https://images.unsplash.com/photo-1568043210943-0e8aac4b9734?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="img-thumbnail">
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<img src="https://images.unsplash.com/photo-1557166984-b00337652c94?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="img-thumbnail">
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<img src="https://images.unsplash.com/photo-1489084917528-a57e68a79a1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="img-thumbnail">
-			</div>
-			<div class="col-lg-4 col-sm-6">
-					<img src="https://images.unsplash.com/photo-1488740304459-45c4277e7daf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="img-thumbnail">
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<img src="https://images.unsplash.com/photo-1488015795646-7e22a773d72a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="img-thumbnail">
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<img src="https://images.unsplash.com/photo-1557246565-8a3d3ab5d7f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="img-thumbnail">
-			</div>
-			<div class="col-lg-4 col-sm-6">
-					<img src="https://images.unsplash.com/photo-1527416876370-fb74d128c3dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="img-thumbnail">
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<img src="https://images.unsplash.com/photo-1503844281047-cf42eade5ca5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80" class="img-thumbnail">
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<img src="https://images.unsplash.com/photo-1457410129867-5999af49daf7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80" class="img-thumbnail">
+			<div class="col-lg-12">
+				<div id="content">
+					<h1>Feline Gallery</h1>
+					<h3>Look at the gallery, I bet you will fell in love!!</h3>
+					<hr align=left>
+					<button class="btn btn-secondary btn-lg" onclick="window.location.href='photogrid.html'"><i class="fas fa-paw"></i> Get Started!</button>
+				</div>
 			</div>
 		</div>
 	</div>
